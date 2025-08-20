@@ -1,0 +1,74 @@
+.spells-list {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.spell-item {
+  background-color: var(--surface-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.spell-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.spell-item p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  align-items: center;
+}
+
+.search-bar {
+  flex-grow: 1; /* This makes the search bar fill the available space */
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 1px solid var(--border-color);
+  background-color: transparent;
+  color: var(--text-secondary);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: var(--surface-dark);
+  color: var(--text-light);
+}
+
+.filter-btn.active {
+  background-color: var(--primary-gold);
+  color: var(--background-dark);
+  border-color: var(--primary-gold);
+  font-weight: bold;
+}

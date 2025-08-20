@@ -1,0 +1,32 @@
+.navbar {
+  background-color: var(--surface-dark);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-family: 'Merriweather', serif;
+  font-size: 1.2rem;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-gold);
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+/* Style for the active link */
+.nav-link.active {
+  color: var(--primary-gold);
+  font-weight: bold;
+}

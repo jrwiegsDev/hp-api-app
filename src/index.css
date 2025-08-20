@@ -1,0 +1,56 @@
+/* Import a magical-looking font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap');
+
+/* Set up CSS variables for our color palette */
+:root {
+  --background-dark: #121212;
+  --surface-dark: #1e1e1e;
+  --primary-gold: #d4af37;
+  --text-light: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --border-color: #444;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+  cursor: url('/use160.cur'), auto;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  color: var(--primary-gold);
+  text-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Force the cursor to stay as a wand on all clickable items */
+a, button, .character-card {
+  cursor: inherit !important;
+}
+
+/* Custom Scrollbar for a bit of flair */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -1,0 +1,91 @@
+.ReactModal__Overlay {
+  position: fixed; /* Add this line */
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  z-index: 1000;
+  /* Ensure it covers the whole screen */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+.character-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  background: var(--surface-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  outline: none;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Re-using styles from CharacterDetailPage.css */
+.character-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.character-detail-image {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid var(--border-color);
+}
+
+.character-detail-info h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.character-detail-info p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.character-attributes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.attribute-item {
+  background-color: #121212;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.attribute-item strong {
+  color: var(--primary-gold);
+  display: block;
+  margin-bottom: 0.5rem;
+}
